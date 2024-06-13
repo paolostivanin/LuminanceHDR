@@ -22,6 +22,9 @@
 #ifndef PFS_RESIZE_HXX
 #define PFS_RESIZE_HXX
 
+#if BOOST_VERSION >= 108500
+#include <boost/numeric/conversion/bounds.hpp>
+#endif
 #include <boost/math/constants/constants.hpp>
 #include "copy.h"
 #include "resize.h"
